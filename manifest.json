@@ -1,0 +1,23 @@
+{
+  "name": "今いくら？",
+  "description": "ビックカメラのほしいものリストで合計金額を表示",
+  "author": "Brown",
+  "manifest_version": 3,
+  "version": "0.1",
+  "icons": {
+    "128": "shopping.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.biccamera.com/bc/member/CMmWishList.jsp"
+      ],
+      "js": [
+        "script.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "action": {}
+}
